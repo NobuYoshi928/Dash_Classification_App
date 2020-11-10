@@ -10,6 +10,7 @@ before_install:
 
 script:
     - docker-compose exec python-visualization zsh -c "python src/app.py"
+    - docker-compose stop
 
 deploy:
     provider: script
