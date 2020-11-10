@@ -8,7 +8,7 @@ $ docker-compose up -d --build
 ## Dash
 * 起動
 ```
-$ dockse-compose exec python-visualization zsh -c "python src/dash/app.py"
+$ docker-compose exec python-visualization zsh -c "python src/dash/app.py"
 ```
 
 * 以下URLにアクセス

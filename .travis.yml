@@ -1,0 +1,9 @@
+sudo: required
+
+services: docker
+
+before install:
+    - docker-compose up -d --build
+
+script:
+    - docker-compose exec python-visualization zsh -c "python src/app.py"
