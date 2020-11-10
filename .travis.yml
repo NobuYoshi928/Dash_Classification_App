@@ -9,8 +9,7 @@ before_install:
     - docker login -u "$HEROKU_USERNAME" -p "$HEROKU_API_KEY" registry.heroku.com
 
 script:
-    - docker-compose exec python-visualization zsh -c "python src/app.py"
-    - docker-compose stop
+    - docker-compose exec python-visualization zsh -c "pytest --remote -k bsly001"
 
 deploy:
     provider: script
