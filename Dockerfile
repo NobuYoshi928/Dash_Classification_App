@@ -7,7 +7,7 @@ RUN apt-get install -y zsh less
 RUN pip install --upgrade pip
 RUN pip install --upgrade setuptools
 
-ADD requirements.py /tmp
+ADD requirements.txt /tmp
 RUN pip install -r /tmp/requirements.txt
 
 ENV LANG ja_JP.UTF-8
