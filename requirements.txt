@@ -1,1 +1,5 @@
+category_encoders
+dash==1.16.3
 gunicorn
+pandas
+scikit-learn
