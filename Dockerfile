@@ -18,4 +18,4 @@ EXPOSE 5050
 
 # 追記部分
 COPY . .
-CMD ["python" "app.py"]
+CMD ["zsh" "-c" "python app.py"]
