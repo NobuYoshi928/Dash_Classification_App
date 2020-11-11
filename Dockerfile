@@ -13,6 +13,7 @@ RUN pip install -r /tmp/requirements.txt
 ENV LANG ja_JP.UTF-8
 ENV LANGUAGE ja_JP:ja
 ENV LC_ALL ja_JP.UTF-8
+ENV PORT $PORT
 
 EXPOSE $PORT
 

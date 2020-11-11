@@ -1,5 +1,6 @@
 import base64
 import io
+import os
 
 import category_encoders as ce
 import dash
@@ -616,4 +617,4 @@ def model_training(n_clicks, C, *args):
 
 
 if __name__ == '__main__':
-    app.run_server(host='0.0.0.0', port=$PORT, debug=True)
+    app.run_server(host='0.0.0.0', port=os.environ['PORT'], debug=True)
