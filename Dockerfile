@@ -11,9 +11,7 @@ RUN pip install \
     dash==1.16.3 \
     pandas \
     category_encoders \
-    scikit-learn \
-    selenium \
-    chromedriver-binary==86.0.4240.111
+    scikit-learn 
 
 ENV LANG ja_JP.UTF-8
 ENV LANGUAGE ja_JP:ja
